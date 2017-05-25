@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/activityTappa"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--android:fitsSystemWindows="true"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:context="com.takeatrip.Activities.TappaActivity"-->
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            >
+
+            <ImageView
+                android:id="@+id/coverImageTappa"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/empty_image"
+                android:minHeight="200dp"
+                android:maxHeight="250dp"
+                />
+
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="256dp"-->
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerPrivacyLevel"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_gravity="right|top"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:theme="@style/Theme.Design.Light"
+                />
+
+                <Button
+                    android:id="@+id/home"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_gravity="start|top"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:theme="@style/Theme.Design.Light"
+                    android:onClick="onClickHome"
+                    android:background="@drawable/ic_home_black_36dp" />
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/sheet_text_scrim_height_top"-->
+                <!--android:background="@drawable/scrim_top"-->
+                <!--app:layout_collapseMode="pin"/>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sheet_text_scrim_height_bottom"
+                android:layout_gravity="bottom"
+                android:id="@+id/viewSfondoTitolo"
+                android:background="@drawable/scrim_bottom">
+            </View>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/nestedScrollView2">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/layoutDataTappa">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_event_black_36dp"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textDataTappa"
+                        android:textSize="20sp"
+                        android:text="@string/set_date"
+                        android:layout_gravity="left"
+                        android:textAlignment="center"
+                        android:onClick="onClickChangeDate"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_help_black_24dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:clickable="true"
+                        android:onClick="onClickDateHelp"/>
+                </LinearLayout>
+
+
+                <com.takeatrip.GraphicalComponents.AdaptableExpandableListView
+                    android:id="@+id/notesExpandable"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_photo_camera_black_36dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="10dp"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:text="@string/Photos"
+                        android:layout_gravity="start"/>
+                </LinearLayout>
+
+
+                <com.takeatrip.GraphicalComponents.AdaptableGridView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grid_view_photos"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:verticalSpacing="5dp"
+                    android:horizontalSpacing="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbars="none"
+                    android:listSelector="@null"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_videocam_black_36dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="10dp"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:text="@string/Videos"
+                        android:layout_gravity="start"/>
+                </LinearLayout>
+
+
+                <com.takeatrip.GraphicalComponents.AdaptableGridView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grid_view_videos"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:verticalSpacing="5dp"
+                    android:horizontalSpacing="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="1"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbars="none"
+                    android:listSelector="@null" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_mic_black_36dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="10dp"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:text="@string/Records"
+                        android:layout_gravity="start"/>
+                </LinearLayout>
+
+                <com.takeatrip.GraphicalComponents.AdaptableGridView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/grid_view_records"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:verticalSpacing="5dp"
+                    android:horizontalSpacing="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbars="none"
+                    android:listSelector="@null"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:backgroundTint="@color/blue"-->
+        <!--android:src="@drawable/ic_add_white_24dp" />-->
+
+
+
+
+    <toan.android.floatingactionmenu.FloatingActionsMenu
+        android:id="@+id/menuInserimentoContenuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/floating_action_menu_margin_right"
+        android:layout_marginBottom="@dimen/floating_action_menu_margin_bottom"
+        app:fab_addButtonColorNormal="@color/blue"
+        app:fab_addButtonColorPressed="@color/blue_semi_transparent_pressed"
+        app:fab_addButtonPlusIconColor="@color/biancoPallido"
+        app:fab_labelsPosition="left"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:fab_menuIcon="@drawable/ic_menu_white_36dp"
+        >
+
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/biancoPallido"
+            app:fab_size="mini"
+            app:fab_title="@string/delete_stop"
+            app:fab_colorPressed="@color/white_pressed"
+            />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/buttonAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/biancoPallido"
+            app:fab_title="@string/addNote"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="mini"
+            />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/buttonAddRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/biancoPallido"
+            app:fab_size="mini"
+            app:fab_title="@string/addRecord"
+            app:fab_colorPressed="@color/white_pressed"
+            />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/buttonAddVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/biancoPallido"
+            app:fab_size="mini"
+            app:fab_title="@string/addVideo"
+            app:fab_colorPressed="@color/white_pressed"
+            />
+
+        <toan.android.floatingactionmenu.FloatingActionButton
+            android:id="@+id/buttonAddPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/biancoPallido"
+            app:fab_size="mini"
+            app:fab_title="@string/addPhoto"
+            app:fab_colorPressed="@color/white_pressed"
+            />
+
+    </toan.android.floatingactionmenu.FloatingActionsMenu>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

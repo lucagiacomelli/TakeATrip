@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutDialogImage">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageDialog"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/textSegnala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:text="@string/segnala"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+         />
+
+    <Spinner
+        android:id="@+id/spinnerPrivacyLevel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:drawSelectorOnTop="true"
+        android:layout_gravity="end|top"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:theme="@style/Theme.Design.Light" />
+
+
+
+</FrameLayout>

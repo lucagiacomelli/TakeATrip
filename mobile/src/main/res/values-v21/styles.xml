@@ -1,0 +1,48 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.WithActionBar.Social" parent="android:Theme.WithActionBar">
+        <item name="android:colorPrimary">@color/blue</item>
+        <item name="android:colorPrimaryDark">@color/blue</item>
+        <item name="android:colorBackground">#ffffff</item>
+        <item name="android:statusBarColor">@color/blue</item>
+
+    </style>
+
+    <style name="Social" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:colorBackground">@color/blue</item>
+        <item name="android:textColorPrimaryInverse">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+
+    <!--<style name="AppTheme" parent="Base.AppTheme">-->
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+    <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="Theme.DesignDemo" parent="Theme.AppCompat">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+    <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
+
+
+    <!--<style name="Base.AppTheme"></style>-->
+
+    <!--<style name="Base"></style>-->
+
+    <!--<style name="Base.Theme"></style>-->
+
+    <!--<style name="Base.Theme.DesignDemo"></style>-->
+
+
+</resources>

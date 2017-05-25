@@ -1,0 +1,300 @@
+<resources>
+    <string name="app_name">TakeATrip</string>
+    <string name="facebook_app_id">1024572710947061</string>
+    <!--string name="google_app_id">854482298731</string-->
+
+    <!-- Activities titles -->
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registrazione">Registration</string>
+    <string name="title_activity_profilo">Profile</string>
+    <string name="title_activity_lista_viaggi">ListTravels</string>
+    <string name="title_activity_categoria">CategoriaActivity</string>
+    <string name="title_activity_viaggio">ViaggioActivity</string>
+    <string name="title_activity_lista_tappe">ListaTappeActivity</string>
+    <string name="title_activity_lista_tappe2">Lista Tappe</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_destination_selection">DestinationSelectionActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="title_activity_audio_record_test">AudioRecordTest</string>
+    <string name="title_activity_multi_image_chooser">MultiImageChooserActivity</string>
+    <string name="title_activity_tappa">TappaActivity</string>
+    <string name="title_activity_streaming">StreamingActivity</string>
+    <string name="title_activity_tutorial">Short Tutorial</string>
+    <string name="title_tutorial">"HOW TO USE TAT"</string>
+    <string name="title_activity_tatintro">Intro</string>
+
+
+    <string name="Login">Login</string>
+    <string name="Registration">Registration</string>
+    <string name="Name">Name</string>
+    <string name="Surname">Surname</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="DateOfBirth">Date of birth</string>
+    <string name="numberFollowers"># </string>
+    <string name="Followers"> Followers</string>
+    <string name="numberFollowing"># </string>
+    <string name="Following"> Following</string>
+    <string name="Register">Register</string>
+    <string name="LoginWithFb">Sign up with Facebook</string>
+    <string name="LoginWithGoogle">Sign up with Google</string>
+    <string name="Logout">Logout</string>
+    <string name="Category">Category</string>
+    <string name="LoginError">Incorrect Data</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Splash">Take a Trip</string>
+    <string name="Viaggi">Travels</string>
+
+    <string name="AvviaRicerca">Search</string>
+    <string name="CaricamentoInCorso">Loading...</string>
+
+    <string name="Satellite">Satellite</string>
+    <string name="Hybrid">Hybrid</string>
+    <string name="Terrain">Terrain</string>
+
+
+    <string name="Edit">Edit</string>
+
+    <string name="YourTravel">Create New Travel</string>
+    <string name="InsertNameTravel">Travel name</string>
+    <string name="Participants">Participants</string>
+    <string name="Stops">Stops</string>
+    <string name="Settings">Settings</string>
+    <string name="Photos">Photos</string>
+    <string name="Create">Create</string>
+    <string name="Cancel">Cancel</string>
+
+
+
+    <string-array name="CommandsImageProfile">
+        <item>View profile image</item>
+        <item>Modify profile image</item>
+        <item>Take a photo</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="CommandsCoverImage">
+        <item>View cover image</item>
+        <item>Modify cover image</item>
+        <item>Take a photo</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="CommandsTravelImage">
+        <item>View travel image</item>
+        <item>Modify travel image</item>
+        <item>Modify travel name</item>
+        <item>Cancel</item>
+    </string-array>
+
+
+    <string-array name="CommandsViewProfile">
+        <item>view profile</item>
+    </string-array>
+
+    <string-array name="CommandsSettingsMain">
+        <item>logout</item>
+    </string-array>
+
+
+    <string name="VecchiaPassword">Insert old password</string>
+    <string name="NuovaPassword">Insert new password</string>
+    <string name="ConfermaNuovaPassword">Confirm new password</string>
+    <string name="ConfermaPassword">Confirm password</string>
+    <string name="InserisciNuovoUsername">Username</string>
+    <string name="InserisciNuovoSesso">Sex</string>
+    <string name="InserisciNuovaNazionalita">Nationality</string>
+    <string name="InserisciNuovoLavoro">Job</string>
+    <string name="InserisciNuovaDescrizione">Description</string>
+    <string name="InserisciNuovoTipo">Type of traveller</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This id address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing id
+        completions."
+    </string>
+
+
+    <string name="search_poi">Search POI</string>
+
+    <string-array name="PrivacyLevel">
+        <item>Public</item>
+        <item>Followers</item>
+        <item>Travel</item>
+        <item>Private</item>
+    </string-array>
+
+    <string-array name="PrivacyLevelDescription">
+        <item>Anyone can see these contents</item>
+        <item>Only your followers can see these contents</item>
+        <item>Only your travel friends can see these contents</item>
+        <item>No one can see these contents</item>
+    </string-array>
+
+    <string name="insert_new_stop">New stop</string>
+
+    <string-array name="CommandsAddPhotoToStop">
+        <item>Choose a photo</item>
+        <item>Choose multiple photos</item>
+        <item>Take a photo</item>
+    </string-array>
+
+    <string-array name="CommandsAddVideoToStop">
+        <item>Choose existing videos</item>
+        <item>Take a video</item>
+    </string-array>
+
+    <string-array name="CommandsAddRecordToStop">
+        <item>Choose existing records</item>
+        <item>Take a record</item>
+    </string-array>
+
+
+    <string name="completeProfile">Complete your profile</string>
+    <string name="SAVE">SAVE</string>
+    <string name="edit_profile">Edit your profile</string>
+    <string name="Eta">Age</string>
+    <string name="created_travel">Travel created successfully</string>
+
+
+    <string name="labelBeforeCaptureAudio">Register</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="Male">M</string>
+    <string name="Female">F</string>
+    <string name="sexIncorrect">Attention! \n Incorrect sex</string>
+    <string name="incorrectUsername">Attention! \nIncorrect username!</string>
+
+    <string name="labelNote">Insert note</string>
+    <string name="labelNoEditNote">Note</string>
+
+    <string name="Videos">Videos</string>
+    <string name="Records">Records</string>
+    <string name="Notes">Notes</string>
+    <string name="NoTravels">No travels found</string>
+
+    <string name="addNote">Add new note</string>
+    <string name="addRecord">Add new record</string>
+    <string name="addVideo">Add new video</string>
+    <string name="addPhoto">Add new photo</string>
+    <string name="LogOutFailed">Logout failed, try again</string>
+    <string name="SearchByDestination">Search by destination</string>
+    <string name="update_failed">Update failed</string>
+    <string name="NewTravel">New travel</string>
+    <string name="no_travels">No travels</string>
+    <string name="FOLLOWING">"FOLLOWING"</string>
+    <string name="FOLLOWERS">"FOLLOWERS"</string>
+    <string name="following">FOLLOWING</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="search">SEARCH</string>
+    <string name="search_the_user">Search the user</string>
+    <string name="user">User</string>
+    <string name="exit">Exit</string>
+    <string name="back">Go Back</string>
+    <string name="alert_message">Are you sure?</string>
+    <string name="alert_message_info_user">Exit without saving?</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="travelCreate">Create Travel</string>
+    <string name="viewListTravel">View travels list</string>
+
+
+    <string name="travel_text">"Go to your travels list"</string>
+    <string name="social_text">"Go to the social area"</string>
+    <string name="add_text">"Create a new travel"</string>
+    <string name="search_text">Search user or travel in TAT community</string>
+    <string name="profile_text">"Go to your public profile\nYou will see here your custom image profile"</string>
+    <string name="plus_text">"Add a new stop to a travel"</string>
+    <string name="menu_text">"Sub-menu with multiple choices"</string>
+    <string name="home_text">"Go to the homepage"</string>
+    <string name="help_text">"Go to tips for use"</string>
+    <string name="finish">Finish</string>
+    <string name="info_add_partecipant_travel">Choose a participant and click on the plus to add it to travel</string>
+    <string name="stopsList">Manage stops</string>
+    <string name="addPartecipant">Add partecipant</string>
+    <string name="help">Help</string>
+    <string name="dateFormat">Date format: dd/mm/aaaa</string>
+    <string name="set_date">Set date</string>
+    <string name="newTravel">Partecipants:\nWrite the name, surname or username of the other
+        participants and then press the "plus button"</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete_content_alert">Proceed removing the content from this travel?</string>
+    <string name="report_content_alert">Proceed reporting the content of this travel?</string>
+    <string name="delete_travel">Delete this travel</string>
+    <string name="delete_travel_alert">Proceed deleting this travel?</string>
+    <string name="delete_stop">Delete this stop</string>
+    <string name="delete_stop_alert">Proceed removing the stop and all related contents from this travel?</string>
+    <string name="edit_travel_name">Edit travel name</string>
+    <string name="logout_alert">Are you sure you want to logout?</string>
+    <string name="fail_add_participant">Already a participant</string>
+    <string name="success_add_participant">Participant added</string>
+
+    <!--app intro slides-->
+    <string name="permissions_slide_title">Permissions</string>
+    <string name="permissions_slide_description">We need access to some resources of your phone
+        to offer a better experience. Please move forward and grant us permissions.</string>
+    <string name="last_slide_title">Let\'s start!</string>
+    <string name="last_slide_description">Don\'t miss anything you love in your journey… TakeATrip!</string>
+    <string name="help_slide_title">Help!</string>
+    <string name="help_slide_description">Whenever you will find yourself in troubles, go to the Home
+        page and tap on this icon to view a Tutorial page.</string>
+    <string name="home_slide_description">This is your TakeATrip home page. From here, you can acces
+        all the main features like creating a new travel or searching for someone else\'s one.</string>
+    <string name="home_slide_title">Home page</string>
+    <string name="memories_slide_description">You can upload into TakeATrip your travel memories,
+        like photos and videos. You will always have them with you to revive your special moments.</string>
+    <string name="memories_slide_title">Memories</string>
+    <string name="adviseNoTravel">No travels found</string>
+    <string name="adviseNewTravel">Would you like to add a new Travel?</string>
+    <string name="adviseNewStop">Would you like to add a new Stop?</string>
+    <string name="exit_travel_alert">are you sure to exit from this travel?</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="view_notes">View notes</string>
+    <string name="EditNote">Edit note</string>
+    <string name="delete">Delete</string>
+    <string name="add_a_travel">Add travel</string>
+    <string name="add_to_last_stop">Add to last stop</string>
+    <string name="travelByUser">travel by user</string>
+    <string name="SearchTravelByDestination">travel by destination</string>
+    <string name="adviseNoStops">No stops found</string>
+    <string name="searchUser">Search user</string>
+    <string name="add_a_stop">Add stop to last travel</string>
+    <string name="last_stop">Last stop</string>
+    <string name="travels">Travels</string>
+    <string name="travel">Travel</string>
+    <string name="incorrect_date">Attention! Incorrect date</string>
+    <string name="no_followers">Followers not found</string>
+    <string name="no_following">Following not found</string>
+    <string name="choose">CHOOSE</string>
+    <string name="see_last_stop">Last stop</string>
+    <string name="these">these</string>
+    <string name="future">future</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="error_connection">Error: maybe no internet connection.</string>
+    <string name="Search">search</string>
+    <string name="segnala">Report</string>
+
+
+
+    <string name="error_upload">Error in the upload</string>
+    <string name="exit_travel">Exit travel</string>
+    <string name="content_reported">Content reported</string>
+    <string name="visit_stop">Visit the Stop!</string>
+    <string name="text_showcase_stop">Click on picker and on the name of the stop to add contents</string>
+
+
+</resources>
