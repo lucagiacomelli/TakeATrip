@@ -1,4 +1,3 @@
-<p align="center"><img src="http://ec2-54-194-7-136.eu-west-1.compute.amazonaws.com/logodef.png" width="200" height="200" /></p>
 # TakeATrip
 Don't miss anything you love in your journey... TakeATrip!
 
